@@ -1,0 +1,167 @@
+* {
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+  font-size:13px;
+}
+
+ul {
+  list-style:none;
+}
+
+a {
+  text-decoration:none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background:none;
+}
+
+input:focus{
+  outline: none;
+}
+
+/* NAVBAR */
+
+.navbar{
+  display:flex;
+  justify-content: space-between;
+  margin:2em 2em;
+}
+
+
+.navlinks {
+  padding:0 1rem;
+  color:rgb(58, 55, 55);
+}
+
+.navlinks:hover {
+  text-decoration: underline;
+}
+
+.signin-button {
+  color:whitesmoke;
+  font-weight:bold;
+  padding:0.7rem;
+  background-color: rgb(43, 117, 214);
+}
+
+/* MAIN */
+
+.main {
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top:10rem;
+}
+
+.logo {
+  width:270px;
+  height:90px;
+  margin:0 auto 2rem auto;
+}
+
+.search-bar:hover, .search-bar:focus-within {
+  border-color: white;
+  box-shadow: 0 1px 6px 0 rgba(25, 26, 27, 0.28);
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 600px;
+  min-width:350px;
+  padding:0.7rem;
+  margin:1em auto;
+  border: 0.1px solid rgb(197, 197, 197);
+  border-radius: 30px;
+}
+
+
+.search-input {
+  width: 88%;
+  font-size: 1.5rem;
+  border: none;
+}
+
+.glass-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.microphone-icon{
+  width: 25px;
+  height: 25px;
+  margin-left:1rem;
+}
+
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin:1em auto;
+}
+
+.bottom-btn{
+  padding:1rem 0.7rem;
+  margin:0 1em;
+  background-color:hsl(0, 17%, 97%);
+  color:rgb(83, 81, 81);
+  border: 1px solid transparent;
+  border-radius: 5%;
+  font-size:1.07em;
+}
+
+.bottom-btn:hover {
+  border-color: #c5c5c7;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+}
+
+/* FOOTER */
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:1rem 1rem;
+  background-color: #eeeee7;
+}
+
+.footerlinks {
+  margin:0 1em;
+  font-size: 1.1em;
+  color:rgb(102, 97, 97);
+}
+
+.footerlinks:hover {
+  text-decoration: underline;
+  color:rgb(66, 66, 64);
+}
+
+.footer-left .footer-right {
+  display:flex;
+}
+
+/* Media Query */
+
+@media screen and (max-width:600px){
+  #footer{
+    flex-direction:column;
+  } 
+
+  .search-bar {
+    width: 300px;
+  }
+
+  html {
+    font-size: 50%;
+  }
+}
+
+
