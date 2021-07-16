@@ -1,2 +1,2 @@
 # Google Homepage Lookalike Project
-Skills Practiced : Html5, CSS3
+View [Here](https://mr-turquoize.github.io/google-homepage/)
